@@ -1,0 +1,9 @@
+[package]
+name = "bevy_wayland_dnd"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+bevy = "0.14.2"
+image = { version = "0.25.4", features = ["jpeg", "bmp", "dds", "webp", "tiff", "png", "tga", "exr", "pnm", "qoi", "ico", "gif"]}
+log = { version = "*", features = ["max_level_debug", "release_max_level_warn"] }
