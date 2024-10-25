@@ -56,7 +56,7 @@ fn global_cursor(
         .and_then(|cursor| camera.viewport_to_world(camera_transform, cursor))
         .map(|ray| ray.origin.truncate())
     {
-        // On wayland this doesn't print anything when hovering a file over a window
+        // this doesn't print anything when hovering a file over a window
         log::info!("Cursor world position updated! {:?}", world_coords);
         world_coords.0 = world_position;
     }
